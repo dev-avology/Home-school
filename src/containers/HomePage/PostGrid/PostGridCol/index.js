@@ -1,7 +1,7 @@
 import React from "react";
-import { Col, Container, Row } from "react-grid-system";
 import { PostGridColWrap } from "./style";
 import { Button } from "../../../../components";
+import {LocationOn} from '@mui/icons-material';
 
 export const PostGridCol = ({data}) => {
     console.log(data);
@@ -12,14 +12,14 @@ export const PostGridCol = ({data}) => {
         ) : null}
         <div className="post_img">
           {data?.img ? (
-              <img src={data?.img} />
+              <img src={data?.img} alt="postImage" />
           ) : null}
           <div className="img_txt">
             {data?.imgText ? (
                 <p>{data?.imgText} </p>
             ) : null}
             {data?.imgTextLink ? (
-                <Button>{data?.imgTextLink}</Button>
+                <Button href="#">{data?.imgTextLink}</Button>
             ) : null}
           </div>
         </div>
@@ -37,7 +37,10 @@ export const PostGridCol = ({data}) => {
           </div>
           <div className="post_address">
           {data?.address ? (
+            <>
+              <span><LocationOn/></span>
               <span>{data?.address}</span>
+            </>
           ) : null}
           </div>
         </div>
