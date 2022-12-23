@@ -9,7 +9,7 @@ export const InfoCol = ({ data }) => {
         {data?.img ? <img src={data?.img} alt="infoImage"/> : null}
       </div>
       <div className="info_text">
-        {data?.description ? <Paragraph>{data?.description}</Paragraph> : null}
+        {data?.description ? <Paragraph textAlign="center">{data?.description}</Paragraph> : null}
       </div>
     </InfoColWrap>
   );

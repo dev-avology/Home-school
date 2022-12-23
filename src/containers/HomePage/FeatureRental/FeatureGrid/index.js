@@ -1,42 +1,89 @@
 import React from "react";
 import { FeatureGridWrap } from "./style";
-import { Button } from "../../../../components";
-import {LocationOn} from '@mui/icons-material';
+import { Paragraph, SubHeading } from "../../../../components";
+import { Col, Row } from "react-grid-system";
 
-export const FeatureGrid = ({data}) => {
-    console.log(data);
+export const FeatureGrid = ({ data }) => {
+  console.log(data);
   return (
     <FeatureGridWrap className="feature_grid_col">
-        <div className="feature_img">
-            {data?.img ? (
-                <img src={data?.img} alt="featureImage"/>
-            ) : null}
-            <p className="feature_img_txt">
-                {data?.img_txt ? (
-                    <h3>{data?.img_txt}</h3>
-                ) : null} 
-            </p>
+      <div className="feature_img">
+        {data?.img ? <img src={data?.img} alt="featureImage" /> : null}
+        {data?.img_txt ? (
+          <Paragraph
+            color="#C7C7C7"
+            fontSize="24"
+            textAlign="center"
+            fontFamily="Times New Roman"
+            className="feature_img_txt"
+          >
+            {data?.img_txt}
+          </Paragraph>
+        ) : null}
+      </div>
+      <div className="feature_txt">
+        <div className="title mb-25">
+          {data?.westlake ? (
+            <SubHeading
+              color="#101729"
+              fontSize="17px"
+              fontWeight="600"
+              textAlign="center"
+            >
+              {data?.westlake}
+            </SubHeading>
+          ) : null}
         </div>
-        <div className="feature_txt">
-            <div className="title">
-                {data?.westlake ? (
-                    <h3>{data?.westlake}</h3>
-                ) : null}    
-            </div>
-            <div className="feature_info">
-                 <div>
-                    {data?.Icon1 ? (
-                        <img src={data?.Icon1} />
-                    ) : null} 
-                 </div>
-                 <div>
-                    {data?.classes ? (
-                        <img src={data?.classes} />
-                    ) : null} 
-                 </div>
-            </div>
+        <div className="feature_info">
+          <Row>
+            <Col lg={4}>
+              <div className="feature_info_col">
+                <div>{data?.icon1 ? <img src={data?.icon1} /> : null}</div>
+                {data?.classes ? (
+                  <Paragraph
+                    color="#101729"
+                    fontSize="10"
+                    textAlign="center"
+                    fontFamily="Times New Roman"
+                  >
+                    {data?.classes}
+                  </Paragraph>
+                ) : null}
+              </div>
+            </Col>
+            <Col lg={4}>
+              <div className="feature_info_col">
+                <div>{data?.icon2 ? <img src={data?.icon2} /> : null}</div>
+                {data?.bathrooms ? (
+                  <Paragraph
+                    color="#101729"
+                    fontSize="9"
+                    textAlign="center"
+                    fontFamily="Times New Roman"
+                  >
+                    {data?.bathrooms}
+                  </Paragraph>
+                ) : null}
+              </div>
+            </Col>
+            <Col lg={4}>
+              <div className="feature_info_col">
+                <div>{data?.icon3 ? <img src={data?.icon3} /> : null}</div>
+                {data?.students ? (
+                  <Paragraph
+                    color="#101729"
+                    fontSize="9"
+                    textAlign="center"
+                    fontFamily="Times New Roman"
+                  >
+                    {data?.students}
+                  </Paragraph>
+                ) : null}
+              </div>
+            </Col>
+          </Row>
         </div>
-        
+      </div>
     </FeatureGridWrap>
   );
 };
