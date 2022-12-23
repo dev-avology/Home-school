@@ -71,7 +71,13 @@ function createPadding() {
       styles +
       `.pb-${i}{
             padding-bottom: ${convertToRem(i)};
-        };`;
+        };
+        .pl-${i}{
+          padding-left: ${convertToRem(i)};
+      };
+      .pr-${i}{
+        padding-right: ${convertToRem(i)};
+    };`;
   }
 
   return css`

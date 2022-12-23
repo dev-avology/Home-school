@@ -1,15 +1,14 @@
 import styled from "styled-components";
 
 export const SubHeading = styled.h3`
-  font-weight:  ${(props) =>
+  font-weight: ${(props) =>
     props?.fontWeight ? `${props?.fontWeight}` : `500`};
-  font-size: ${(props) =>
-    props?.fontSize ? `${props?.fontSize}` : `28px`};
+  font-size: ${(props) => (props?.fontSize ? `${props?.fontSize}` : `28px`)};
   line-height: ${(props) =>
     props?.lineHeight ? `${props?.lineHeight}` : `34px`};
   letter-spacing: 0.02em;
-  color: ${(props) =>
-    props?.color ? `${props?.color}` : `#fff`};
+  color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
+  text-align: ${(props) => (props?.textAlign ? `${props?.textAlign}` : `left`)};
 `;
 
 export const BannerHeading = styled.h1`
@@ -22,15 +21,17 @@ export const BannerHeading = styled.h1`
 `;
 
 export const Paragraph = styled.p`
-  ${(props) =>
-    props?.fontsize ? `font-size:${props?.fontsize}px` : ``};
-  font-weight: 600;
-  line-height: 19px;
+  ${(props) => (props?.fontSize ? `font-size:${props?.fontSize}px` : ``)};
+  font-weight: ${(props) =>
+    props?.fontWeight ? `${props?.fontWeight}` : `400`};
+  font-family: ${(props) =>
+    props?.fontFamily ? `${props?.fontFamily}` : `Inter`};
+  line-height: ${(props) =>
+    props?.lineHeight ? `${props?.lineHeight}` : `19px`};
   letter-spacing: 0.02em;
-  text-align: center;
+  text-align: ${(props) => (props?.textAlign ? `${props?.textAlign}` : `left`)};
   margin: 0;
-  color: ${(props) =>
-    props?.color ? `${props?.color}` : `#fff`};
+  color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
 `;
 
 export const Button = styled.a`
@@ -39,7 +40,7 @@ export const Button = styled.a`
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  color: #fff;
+  color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
   padding: 15px 30px;
   display: inline-block;
   text-transform: capitalize;
@@ -53,7 +54,6 @@ export const SecHeading = styled.h2`
   font-size: 45px;
   line-height: 54px;
   letter-spacing: 0.02em;
-  color: ${(props) =>
-    props?.color ? `${props?.color}` : `#fff`};
-  text-align: center;
+  color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
+  text-align: ${(props) => (props?.textalign ? `${props?.textalign}` : `center`)};
 `;
