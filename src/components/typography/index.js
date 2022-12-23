@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Div = styled.div``;
+export const Img = styled.img`
+width:${(props) =>
+  props?.width ? `${props?.width}` : `100%`};`;
+
 export const SubHeading = styled.h3`
   font-weight:  ${(props) =>
     props?.fontWeight ? `${props?.fontWeight}` : `500`};

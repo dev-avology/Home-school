@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import { HomePage } from './containers';
+import { HomePage, CommunityPage } from './containers';
 import AOS from 'aos';
 import { useEffect, useState } from 'react';
 import { Loader } from './components/loader';
@@ -27,6 +27,7 @@ function App() {
     return (
       <Routes>
         <Route path='/' element={<HomePage />} />
+        <Route path='/community-project' element={<CommunityPage />} />
       </Routes>
     );
   }

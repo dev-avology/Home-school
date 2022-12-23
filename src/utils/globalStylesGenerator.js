@@ -13,11 +13,26 @@ const convertToRem = (px) => {
 
 function createFontStyles() {
   let styles = ``;
-  for (let i = 1; i <= 30; i++) {
+  for (let i = 1; i <= 50; i++) {
     styles =
       styles +
       `.fs-${i}{
             font-size: ${convertToRem(i)}
+        };`;
+  }
+
+  return css`
+    ${styles}
+  `;
+}
+
+function createLineHeights() {
+  let styles = ``;
+  for (let i = 1; i <= 50; i++) {
+    styles =
+      styles +
+      `.lh-${i}{
+          line-height: ${convertToRem(i)}
         };`;
   }
 
@@ -39,9 +54,32 @@ function createFontWeight() {
     ${styles}
   `;
 }
+
+function createColor() {
+  let styles = `.graycolor{color: #6D767E}
+            .black{color: #000000}
+            .white{color: #fffff}
+        };`;
+
+  return css`
+    ${styles}
+  `;
+}
+
+function createTextTransform() {
+  let styles = `.uppercase{text-transform: uppercase}
+            .lowercase{text-transform: lowercase}
+            .capitalize{text-transform: capitalize}
+        };`;
+
+  return css`
+    ${styles}
+  `;
+}
+
 function createPadding() {
   let styles = ``;
-  for (let i = 0; i <= 35; i++) {
+  for (let i = 0; i <= 50; i++) {
     styles =
       styles +
       `.ph-${i}{
@@ -50,7 +88,7 @@ function createPadding() {
             
         };`;
   }
-  for (let i = 0; i <= 35; i++) {
+  for (let i = 0; i <= 50; i++) {
     styles =
       styles +
       `.pv-${i}{
@@ -66,7 +104,7 @@ function createPadding() {
             padding-top: ${convertToRem(i)};
         };`;
   }
-  for (let i = 0; i <= 35; i++) {
+  for (let i = 0; i <= 50; i++) {
     styles =
       styles +
       `.pb-${i}{
@@ -80,7 +118,7 @@ function createPadding() {
 }
 function createMargin() {
   let styles = ``;
-  for (let i = 0; i <= 35; i++) {
+  for (let i = 0; i <= 50; i++) {
     styles =
       styles +
       `.mh-${i}{
@@ -122,4 +160,7 @@ export const GlobalStylesWrapper = styled.div`
   ${createFontWeight()}
   ${createPadding()}
   ${createMargin()}
+  ${createColor()}
+  ${createTextTransform()}
+  ${createLineHeights()}
 `;
