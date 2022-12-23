@@ -4,6 +4,7 @@ import { PostGrid } from "./PostGrid";
 import { CommunityInfo } from "./CommunityInfo";
 import { FeatureRental } from "./FeatureRental";
 import {ClubHouse} from "./ClubHouse";
+import { Footer } from "../../components";
 export const HomePage = () => {
     return (
       <>
@@ -13,6 +14,7 @@ export const HomePage = () => {
         <CommunityInfo />
         <FeatureRental />
         <ClubHouse />
+        <Footer/>
       </>
     );
   };
