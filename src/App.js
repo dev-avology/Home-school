@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import { HomePage } from './containers';
+import AOS from 'aos';
+import { useEffect, useState } from 'react';
+import { Loader } from './components/loader';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+    });
+  }, []);
+  window.addEventListener('load', AOS.refreshHard);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 4000);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  } else {
+    return (
+      <Routes>
+        <Route path='/' element={<HomePage />} />
+      </Routes>
+    );
+  }
 }
 
 export default App;
