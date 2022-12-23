@@ -18,9 +18,9 @@ export const Banner = () => {
             <Row justify="center" align="center">
                 <Col sm={12} >
                 <div className="banner_inner">
-                    <SubHeading className="mv-0">Building homeschool communities</SubHeading>
+                    <SubHeading className="mv-0" textAlign="center">Building homeschool communities</SubHeading>
                     <BannerHeading className="mv-0">THE <b>WAY</b> OF THE <b>FUTURE</b> </BannerHeading>
-                    <Button href="#" className="mt-20">Read on <East style={{verticalAlign:"middle"}}/></Button>
+                    <Button href="/community-project" className="mt-20">Read on <East style={{verticalAlign:"middle"}}/></Button>
                 </div>
                 </Col>
             </Row>

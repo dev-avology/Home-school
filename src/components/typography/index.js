@@ -60,5 +60,5 @@ export const SecHeading = styled.h2`
   line-height: 54px;
   letter-spacing: 0.02em;
   color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
-  text-align: ${(props) => (props?.textalign ? `${props?.textalign}` : `center`)};
+  text-align: ${(props) => (props?.textAlign ? `${props?.textAlign}` : `center`)};
 `;

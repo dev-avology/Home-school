@@ -13,9 +13,9 @@ export const CommunityPage = () => {
                 <Row>
                     <Col xl={12} lg={12}>
                         <Div className="top_content">
-                            <SubHeading>BUILDING HOMESCHOOL COMMUNITIES / RESEARCH HIGHLIGHT</SubHeading>
-                            <SecHeading>The Homeschool Community Project</SecHeading>
-                            <Paragraph className="fs-20">Utah’s Young Families to Usher in a New Way Forward in Education</Paragraph>
+                            <SubHeading color="#003580" fontSize="20" className="mb-0" >BUILDING HOMESCHOOL COMMUNITIES / RESEARCH HIGHLIGHT</SubHeading>
+                            <SecHeading color="#101729" textAlign="left" className="mt-0 fs-40">The Homeschool Community Project</SecHeading>
+                            <Paragraph color="#455467" className="fs-20">Utah’s Young Families to Usher in a New Way Forward in Education</Paragraph>
                         </Div>
                         <Div className="middle_content pv-50">
                             <Img className="mb-20" src={Image} />
@@ -23,7 +23,7 @@ export const CommunityPage = () => {
                             <Paragraph className="fs-20 graycolor lh-25 mb-20 fw-500">The initial concept model would be ideal if it were established in a community that supports homeschooling and complies with zoning regulations. The good news is that a homeschool community would benefit the neighborhoods within the boundary established. However, in reality, a homeschooler does not have to live in a community that encourages homeschooling. They would have the ability to develop their own resources within their current neighborhood.</Paragraph>
                             <SubHeading className="fs-30 fw-500 black uppercase">A HYBRID APPROACH</SubHeading>
                             <Paragraph className="fs-20 graycolor lh-25 mb-20 fw-500">Since the outbreak of the pandemic, the number of homeschool students has more than tripled. In the United States, homeschooling accounted for 11.1% of students by the fall of 2021, and that percentage has since increased to 18.0% by the summer of 2022. Co-ops, neighbors, and friends, as well as a wealth of free online materials and curricula, are all readily available. Parents who exercise their right to control what their children learn is monumental. They are watching their kids become more driven, inquisitive, and enthusiastic about their studies. Another benefit is the revival of family bonding.</Paragraph>
-                            <Paragraph>In addition to a clubhouse with an auditorium, a library, and a science lab, there would also be teacher patrons on-site to assist families. Other features may include playgrounds, baseball and soccer fields, and benches where various groups may gather or relax while reading a book beneath a tree.</Paragraph>
+                            <Paragraph className="fs-20 graycolor lh-25 mb-20 fw-500">In addition to a clubhouse with an auditorium, a library, and a science lab, there would also be teacher patrons on-site to assist families. Other features may include playgrounds, baseball and soccer fields, and benches where various groups may gather or relax while reading a book beneath a tree.</Paragraph>
                             <SubHeading className="fs-30 fw-500 black uppercase">THE PAY-OFF</SubHeading>
                             <Paragraph className="fs-20 graycolor lh-25 mb-20 fw-500">Currently, a typical homeschool group that is too large to meet in a single home will meet at a church or public building and share the expense with the other members of the group if they engage a hired instructor. As a result of multiple groups contributing financially in a homeschool community, families can benefit from chances like hiring teachers at a lower cost.</Paragraph>
                             <SubHeading className="fs-30 fw-500 black uppercase">No More Bureaucracy</SubHeading>
