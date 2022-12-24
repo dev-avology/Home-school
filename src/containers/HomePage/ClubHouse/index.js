@@ -13,7 +13,7 @@ export const ClubHouse = () => {
         <Row>
            <Col lg={6}>
               <div className="club_house_text">
-                 <SecHeading textalign="left">Clubhouse & <br/> Campus Grounds</SecHeading>
+                 <SecHeading textAlign="left">Clubhouse & <br/> Campus Grounds</SecHeading>
                  <ul>
                     <li>Reserve the Auditorium & Science Lab</li>
                     <li>Access to the Library Bookstore, Football, Track, & Soccer fields</li>

@@ -5,6 +5,7 @@ import { CommunityInfo } from "./CommunityInfo";
 import { FeatureRental } from "./FeatureRental";
 import {ClubHouse} from "./ClubHouse";
 import { Footer } from "../../components";
+import { Neighbour } from "./Neighbourhood";
 export const HomePage = () => {
     return (
       <>
@@ -14,6 +15,7 @@ export const HomePage = () => {
         <CommunityInfo />
         <FeatureRental />
         <ClubHouse />
+        <Neighbour />
         <Footer/>
       </>
     );
