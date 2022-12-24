@@ -19,7 +19,7 @@ export const Banner = () => {
                 <Col sm={12} >
                 <div className="banner_inner">
                     <SubHeading className="mv-0" textAlign="center">Building homeschool communities</SubHeading>
-                    <BannerHeading className="mv-0">THE <b>WAY</b> OF THE <b>FUTURE</b> </BannerHeading>
+                    <BannerHeading className="mv-0">DRIVING <b>CHANGE</b> IN <b>EDUCATION</b> </BannerHeading>
                     <Button href="/community-project" className="mt-20">Read on <East style={{verticalAlign:"middle"}}/></Button>
                 </div>
                 </Col>
