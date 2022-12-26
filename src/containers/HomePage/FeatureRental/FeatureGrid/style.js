@@ -7,6 +7,7 @@ export const FeatureGridWrap = styled.section`
     box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding:15px;
+    margin-bottom:20px;
   .feature_img {
     position:relative;
     img {

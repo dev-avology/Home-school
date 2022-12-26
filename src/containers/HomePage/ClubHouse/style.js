@@ -7,10 +7,18 @@ export const ClubHouseWrap = styled.section`
   padding: 80px 0;
   img {
     width: 100%;
+    @media screen and (max-width:575px){
+      max-width:50%;
+      margin:0 auto;
+      display:block;
+    }
   }
   ul {
     padding-left: 20px;
     margin: 0 0 85px;
+    @media screen and (max-width:575px){
+      margin: 0 0 40px;
+    }
     li {
       color: #fff;
       font-family: Inter;
@@ -19,6 +27,10 @@ export const ClubHouseWrap = styled.section`
       line-height: 24px;
       letter-spacing: 0.02em;
       text-align: left;
+      @media screen and (max-width:575px){
+        font-size: 16px;
+      line-height: 20px;
+      }
     }
   }
 `;

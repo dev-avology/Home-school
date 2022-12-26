@@ -14,8 +14,8 @@ export const FooterWrapper = styled.footer`
     a{
       display:flex;
       align-items:flex-end;
-      font-weight: 400;
-      font-size: 14px;
+      font-weight: 500;
+      font-size: 16px;
       line-height: 16px;
       color: #6D767E;
       margin-top:20px;

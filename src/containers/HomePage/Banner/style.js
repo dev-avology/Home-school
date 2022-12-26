@@ -19,6 +19,13 @@ export const BannerWrapper = styled.section`
     .toggle_inner{
         display:flex;
         text-align:center;
+        justify-content:center;
+    }
+    .vote_col{
+        width:33%;
+    }
+    .vote_col p:nth-child(2) {
+        min-height: 50px;
     }
     .vote_col .JoySwitch-track {
         background-color: transparent;

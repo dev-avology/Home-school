@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
-export const NeighbourGridWrapper = styled.section`
+export const NeighbourGridWrapper = styled.div`
   position: relative;
   padding: 20px 25px;
   background: #ffffff;
   box-shadow: 0px 4px 23px rgba(0, 0, 0, 0.25);
   border-radius: 22px;
   text-align: center;
+  @media screen and (max-width:1199px){
+    margin-top:80px;
+  }
   * {
     position: relative;
     z-index: 2;
@@ -35,5 +38,9 @@ export const NeighbourGridWrapper = styled.section`
     right: -18px;
     font-size: 220px;
     z-index: 1;
+    @media screen and (max-width:767px){
+        right: -10px;
+        font-size: 170px;
   }
+  
 `;

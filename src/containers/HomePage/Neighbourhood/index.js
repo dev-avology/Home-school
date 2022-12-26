@@ -18,7 +18,7 @@ export const Neighbour = () => {
         <Row>
           {Data?.map((item, index) => {
             return (
-              <Col className={item.class} key={index} lg={3} md={6} sm={12}>
+              <Col className={item.class} key={index} xl={3} lg={6} md={6} sm={12}>
                 <NeighbourCol data={item} />
               </Col>
             );

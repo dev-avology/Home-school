@@ -21,4 +21,11 @@ export const PostGridWrapper = styled.section`
         max-width: 40% !important;
         flex: 0 0 40% !important;
     }
+    @media screen and (max-width:991px){
+        .post_col_1, .post_col_2, .post_col_3{
+            max-width: 100% !important;
+            flex:0 0 100% !important;
+            margin-bottom:40px;
+        }
+    }
 `;

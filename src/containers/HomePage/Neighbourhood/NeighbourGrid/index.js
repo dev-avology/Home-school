@@ -15,7 +15,7 @@ export const NeighbourCol = ({ data }) => {
         </Paragraph>
       ) : null}
       <SubHeading
-        className="fs-20 fw-600 lh-24"
+        className="fs-22 fw-600 lh-24"
         color="#6D767E"
         textAlign="center"
       >
@@ -23,7 +23,7 @@ export const NeighbourCol = ({ data }) => {
       </SubHeading>
       {data?.year ? (
         <Paragraph
-          className="fs-14 fw-600 lh-17 mb-15"
+          className="fs-16 fw-600 lh-17 mb-15"
           color="#999B9E"
           textAlign="center"
         >
@@ -32,7 +32,7 @@ export const NeighbourCol = ({ data }) => {
       ) : null}
       <div className="border"></div>
       <Paragraph
-        className="fs-14 fw-500 lh-17 mt-15 mb-5"
+        className="fs-16 fw-500 lh-17 mt-15 mb-5"
         color="#003580"
         textAlign="center"
       >
@@ -41,7 +41,7 @@ export const NeighbourCol = ({ data }) => {
       </Paragraph>
       {data?.address ? (
         <Paragraph
-          className="fs-14 fw-600 lh-17 mb-15"
+          className="fs-16 fw-600 lh-17 mb-15"
           color="#101729"
           textAlign="center"
         >
@@ -49,7 +49,7 @@ export const NeighbourCol = ({ data }) => {
         </Paragraph>
       ) : null}
       <img src={Location} alt="location" />
-      <div className="btn_col fs-12 fw-600 lh-15 mt-20">$ TBD</div>
+      <div className="btn_col fs-15 fw-600 lh-20 mt-20">$ TBD</div>
     </NeighbourGridWrapper>
   );
 };

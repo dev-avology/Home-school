@@ -70,6 +70,9 @@ export const PostGridColWrap = styled.div`
   }
   .post_info span:nth-child(2) {
     padding: 0 10px;
+    @media screen and (max-width:991px){
+        padding: 0 2px;
+    }
   }
 
   .post_info {

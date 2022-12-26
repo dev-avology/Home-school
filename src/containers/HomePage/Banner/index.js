@@ -21,50 +21,50 @@ export const Banner = () => {
   const [count4, setCount4] = useState(0);
   const [count5, setCount5] = useState(0);
   const [count6, setCount6] = useState(0);
-  function Toggle1 (event) {
-    if(event.target.checked){
+  function Toggle1(event) {
+    if (event.target.checked) {
       setCount1(count1 + 1);
-    }else{
+    } else {
       setCount1(count1 - 1);
     }
   }
 
-  function Toggle2 (event) {
-    if(event.target.checked){
+  function Toggle2(event) {
+    if (event.target.checked) {
       setCount2(count2 + 1);
-    }else{
+    } else {
       setCount2(count2 - 1);
     }
   }
 
-  function Toggle3 (event) {
-    if(event.target.checked){
+  function Toggle3(event) {
+    if (event.target.checked) {
       setCount3(count3 + 1);
-    }else{
+    } else {
       setCount3(count3 - 1);
     }
   }
 
-  function Toggle4 (event) {
-    if(event.target.checked){
+  function Toggle4(event) {
+    if (event.target.checked) {
       setCount4(count4 + 1);
-    }else{
+    } else {
       setCount4(count4 - 1);
     }
   }
 
-  function Toggle5 (event) {
-    if(event.target.checked){
+  function Toggle5(event) {
+    if (event.target.checked) {
       setCount5(count5 + 1);
-    }else{
+    } else {
       setCount5(count5 - 1);
     }
   }
 
-  function Toggle6 (event) {
-    if(event.target.checked){
+  function Toggle6(event) {
+    if (event.target.checked) {
       setCount6(count6 + 1);
-    }else{
+    } else {
       setCount6(count6 - 1);
     }
   }
@@ -98,60 +98,72 @@ export const Banner = () => {
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
                       {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                      I advocate for homeschool communities
+                      I advocate for <br /> homeschool <br /> communities
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle1}/>
+                        <ExampleTrackChild Toggle={Toggle1} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
-                      {count2}
+                      {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                      I want this in my existing community
+                      I want this in <br /> my existing <br /> community
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle2}/>
+                        <ExampleTrackChild Toggle={Toggle2} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
-                      {count3}
+                      {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                      I advocate for homeschool communities
+                      I want to <br /> build this
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle3}/>
+                        <ExampleTrackChild Toggle={Toggle3} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -165,60 +177,72 @@ export const Banner = () => {
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
-                      {count4}
+                      {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                      I want to live here
+                      I want to live <br /> here
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle4}/>
+                        <ExampleTrackChild Toggle={Toggle4} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
-                      {count5}
+                      {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                     I want to serve here
+                      I want to <br /> serve here
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle5}/>
+                        <ExampleTrackChild Toggle={Toggle5} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
                   <div className="vote_col">
                     <Paragraph
                       color="#FFC107"
-                      className="fs-18 lh-22 fw-600"
+                      className="  fw-600"
                       textAlign="center"
+                      fontSize="18"
+                      lineHeight="22px"
                     >
-                      {count6}
+                      {count1}
                     </Paragraph>
                     <Paragraph
-                      className="fs-14 lh-17 fw-600 pv-30"
+                      className=" fw-600 pv-30"
                       textAlign="center"
+                      fontSize="14"
+                      lineHeight="17px"
                     >
-                      I will tell my clients about it
+                      I will tell my <br /> clients about <br /> it
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle6}/>
+                        <ExampleTrackChild Toggle={Toggle6} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>

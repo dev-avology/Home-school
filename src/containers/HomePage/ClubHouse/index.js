@@ -25,13 +25,13 @@ export const ClubHouse = () => {
                     <li>In a secure, gated community.</li>
                  </ul>
                  <Row align="center" justify="between">
-                    <Col lg={4}>
+                    <Col sm={4}>
                         <img src={Image2} alt="Sample Subdivision"/>
                     </Col>
-                    <Col lg={7}>
+                    <Col sm={7}>
                         <div className="sample pr-50">
-                            <SubHeading fontSize="24" fontweight="600" lineHeight="29px">Up to 10 family members per year package deals offered</SubHeading>
-                            <Paragraph fontSize="12" fontweight="500" lineHeight="15px">*Monthly Membership fees not included. Residents pay into monthly membership fees plus HOA fees</Paragraph>
+                            <SubHeading fontSize="24px" fontweight="600" lineHeight="29px">Up to 10 family members per year package deals offered</SubHeading>
+                            <Paragraph fontSize="12px" fontweight="500" lineHeight="25px">*Monthly Membership fees not included. Residents pay into monthly membership fees plus HOA fees</Paragraph>
                         </div>
                     </Col>
                  </Row>

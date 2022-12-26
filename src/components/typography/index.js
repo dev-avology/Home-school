@@ -23,6 +23,11 @@ export const BannerHeading = styled.h1`
   letter-spacing: 0.02em;
   color: #fff;
   font-weight: 400;
+  @media screen and (max-width:767px){
+    font-size:40px;
+    line-height:60px;
+    margin-top:20px !important;
+  }
 `;
 
 export const Paragraph = styled.p`
@@ -52,6 +57,10 @@ export const Button = styled.a`
   svg {
     margin-left: 5px;
   }
+  &:hover{
+    color:#FFC107;
+    border-color: #FFC107;
+  }
 `;
 
 export const SecHeading = styled.h2`
@@ -61,4 +70,8 @@ export const SecHeading = styled.h2`
   letter-spacing: 0.02em;
   color: ${(props) => (props?.color ? `${props?.color}` : `#fff`)};
   text-align: ${(props) => (props?.textAlign ? `${props?.textAlign}` : `center`)};
+  @media screen and (max-width:991px){
+    font-size:36px;
+    line-height:40px;
+  }
 `;

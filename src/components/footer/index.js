@@ -20,9 +20,9 @@ export const Footer = () => {
           <Col lg={8} md={8} sm={12}>
              <div className="contact_info">
               <div>
-                <SubHeading color="#101729" className="fs-18 lh-21 pb-20">Contact</SubHeading>
-                <a href="tel:+801941-2815"><LocalPhone/> +801 - 941-2815</a>
-                <a href="mailto:hautestyle@gmail.com"><Mail/> hautestyle@gmail.com</a>
+                <SubHeading color="#455467" className="fs-18 lh-21 pb-20">Contact</SubHeading>
+                <a href="tel:+801941-2815" ><LocalPhone/> +801 - 941-2815</a>
+                <a href="mailto:hautestyle@gmail.com" ><Mail/> hautestyle@gmail.com</a>
               </div>
              </div>
           </Col>

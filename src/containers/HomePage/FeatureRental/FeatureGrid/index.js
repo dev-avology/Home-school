@@ -36,7 +36,7 @@ export const FeatureGrid = ({ data }) => {
         </div>
         <div className="feature_info">
           <Row>
-            <Col lg={4}>
+            <Col xs={4}>
               <div className="feature_info_col">
                 <div>{data?.icon1 ? <img src={data?.icon1} alt="icon"/> : null}</div>
                 {data?.classes ? (
@@ -51,7 +51,7 @@ export const FeatureGrid = ({ data }) => {
                 ) : null}
               </div>
             </Col>
-            <Col lg={4}>
+            <Col xs={4}>
               <div className="feature_info_col">
                 <div>{data?.icon2 ? <img src={data?.icon2} alt="icon"/> : null}</div>
                 {data?.bathrooms ? (
@@ -66,7 +66,7 @@ export const FeatureGrid = ({ data }) => {
                 ) : null}
               </div>
             </Col>
-            <Col lg={4}>
+            <Col xs={4}>
               <div className="feature_info_col">
                 <div>{data?.icon3 ? <img src={data?.icon3} alt="icon"/> : null}</div>
                 {data?.students ? (

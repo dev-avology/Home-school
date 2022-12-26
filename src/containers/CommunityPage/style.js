@@ -6,6 +6,12 @@ export const MainWrapper = styled.section`
     }
 
     .project_info {
-        border-bottom: 1px solid #003580;
+         hr {
+            width: 100%;
+            border-top: 1px solid #003580;
+            margin: 0;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
     }
 `;

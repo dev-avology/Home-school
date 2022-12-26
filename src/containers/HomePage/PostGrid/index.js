@@ -14,7 +14,7 @@ export const PostGrid = () => {
         <Row>
           {Data?.map((item, index) => {
             return (
-              <Col className={item.class} key={index} lg={4} md={12}>
+              <Col className={item.class} key={index} lg={4} sm={12}>
                 <PostGridCol data={item} />
               </Col>
             );
