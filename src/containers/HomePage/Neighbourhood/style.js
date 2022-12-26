@@ -48,18 +48,22 @@ export const NeighbourWrapper = styled.section`
     font-weight: 400;
     font-size: 12px;
     line-height: 14px;
-    color: #101729;
+    color: #101729 ;
     text-align: center;
     display: block;
     width: 100%;
+    opacity:1;
   }
   .form_sec .MuiTextField-root {
     width: 100% !important;
     margin-bottom: 20px;
+    fieldset {
+      border: 0;
+  }
   }
   .form_sec .MuiTextField-root input {
     box-shadow: 0px 0px 10px rgb(0 0 0 / 25%) !important;
-    padding: 10px 0 13px;
+    padding: 10px 10px 13px;
   }
   .form_btn{
     background: #FFC107;

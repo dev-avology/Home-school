@@ -30,7 +30,7 @@ export const NeighbourCol = ({ data }) => {
           Projected to begin in {data?.year}
         </Paragraph>
       ) : null}
-      <div class="border"></div>
+      <div className="border"></div>
       <Paragraph
         className="fs-14 fw-500 lh-17 mt-15 mb-5"
         color="#003580"

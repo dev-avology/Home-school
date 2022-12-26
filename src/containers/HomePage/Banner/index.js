@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Col, Container, Row } from "react-grid-system";
 import { BannerWrapper } from "./style";
 import { Overlay } from "../../../components/overlay";
@@ -10,7 +10,7 @@ import {
 } from "../../../components";
 import ExampleTrackChild from "../Banner/VoteToggle/index";
 import { StyledEngineProvider, CssVarsProvider } from "@mui/joy/styles";
-import Image from "../../../assets/imagee.png"
+import Image from "../../../assets/imagee.png";
 
 import { East } from "@mui/icons-material";
 
@@ -42,64 +42,142 @@ export const Banner = () => {
             <Row align="center" className="pv-50">
               <Col lg={4}>
                 <div className="toggle_inner">
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                      I advocate for homeschool communities
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onClick={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                      I want this in my existing community
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onChange={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                      I advocate for homeschool communities
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onClick={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
                 </div>
               </Col>
               <Col lg={4}>
-                <img src={Image} alt="Imagecenter" style={{width:"100%"}} />
+                <img src={Image} alt="Imagecenter" style={{ width: "100%" }} />
               </Col>
               <Col lg={4}>
-              <div className="toggle_inner">
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                <div className="toggle_inner">
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                      I want to live here
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onClick={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                     I want to serve here
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onClick={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
-                  <div class="vote_col">
-                    <Paragraph color="#FFC107" className="fs-18 lh-22 fw-600" textAlign="center">{count}</Paragraph>
-                    <Paragraph className="fs-14 lh-17 fw-600 pv-30" textAlign="center">I advocate for homeschool communities</Paragraph>
+                  <div className="vote_col">
+                    <Paragraph
+                      color="#FFC107"
+                      className="fs-18 lh-22 fw-600"
+                      textAlign="center"
+                    >
+                      {count}
+                    </Paragraph>
+                    <Paragraph
+                      className="fs-14 lh-17 fw-600 pv-30"
+                      textAlign="center"
+                    >
+                      I will tell my clients about it
+                    </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild onClick={() => setCount(count + 1)} />
+                        <ExampleTrackChild
+                          onClick={() => setCount(count + 1)}
+                        />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>

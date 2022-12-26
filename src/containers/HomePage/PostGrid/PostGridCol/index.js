@@ -19,12 +19,12 @@ export const PostGridCol = ({data}) => {
                 <p>{data?.imgText} </p>
             ) : null}
             {data?.imgTextLink ? (
-                <Button href="http://westlakehomeschool.com/">{data?.imgTextLink}</Button>
+                <Button href="javascript">{data?.imgTextLink}</Button>
             ) : null}
           </div>
         </div>
         <div className="post_grid_text">
-          <div class="post_info">
+          <div className="post_info">
           {data?.classno ? (
               <span>{data?.classno}</span>
           ) : null}

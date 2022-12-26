@@ -25,7 +25,7 @@ export const FeatureRental = () => {
             Visit some of our best properties selected just for you
           </Paragraph>
         </div>
-        <Row justify="space-between" className="feature_grid">
+        <Row justify="between" className="feature_grid">
           {Data?.map((item, index) => {
             return (
               <Col key={index} xxl={3} xl={4} sm={12}>
