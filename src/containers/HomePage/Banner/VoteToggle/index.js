@@ -2,9 +2,9 @@ import * as React from 'react';
 import Switch from '@mui/joy/Switch';
 import Typography from '@mui/joy/Typography';
 
-export default function ExampleTrackChild() {
+export default function ExampleTrackChild({Toggle}) {
   return (
-    <Switch
+    <Switch onChange={Toggle}
       slotProps={{
         track: {
           children: (
