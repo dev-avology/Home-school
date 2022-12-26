@@ -9,7 +9,7 @@ export const BackButton = (props) => {
       <Container>
         <Row>
           <Col lg={12} md={12} sm={12}>
-            <Link to={props?.link}>{props?.text}</Link>
+            <a href={props?.link} style={{color:"#455467"}} >{props?.text}</a>
           </Col>
         </Row>
       </Container>

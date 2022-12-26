@@ -11,6 +11,39 @@ const convertToRem = (px) => {
   return result;
 };
 
+const convertToRem991 = (px) => {
+  let result = ``;
+  const idleRem = 22;
+  if (typeof px === "string") {
+    result = `${parseInt(px) / idleRem}rem`;
+  } else if (typeof px === "number") {
+    result = `${px / idleRem}rem`;
+  }
+  return result;
+};
+
+const convertToRem991LH = (px) => {
+  let result = ``;
+  const idleRem = 19;
+  if (typeof px === "string") {
+    result = `${parseInt(px) / idleRem}rem`;
+  } else if (typeof px === "number") {
+    result = `${px / idleRem}rem`;
+  }
+  return result;
+};
+
+const convertToRem991MR = (px) => {
+  let result = ``;
+  const idleRem = 24;
+  if (typeof px === "string") {
+    result = `${parseInt(px) / idleRem}rem`;
+  } else if (typeof px === "number") {
+    result = `${px / idleRem}rem`;
+  }
+  return result;
+};
+
 function createFontStyles() {
   let styles = ``;
   for (let i = 1; i <= 50; i++) {
@@ -25,6 +58,52 @@ function createFontStyles() {
     ${styles}
   `;
 }
+
+function createMediaStyles991() {
+  let styles = ``;
+  for (let i = 1; i <= 50; i++) {
+    styles =
+      styles +
+      `.fs-${i}{
+            font-size: ${convertToRem991(i)}
+        };
+        .lh-${i}{
+          line-height: ${convertToRem991LH(i)}
+        };
+        
+        .mh-${i}{
+          margin-left: ${convertToRem991MR(i)};
+          margin-right: ${convertToRem991MR(i)};
+          
+      };
+      .mv-${i}{
+          margin-top: ${convertToRem991MR(i)};
+          margin-bottom: ${convertToRem991MR(i)};
+      };
+      .mt-${i}{
+          margin-top: ${convertToRem991MR(i)};
+
+      };
+      .mb-${i}{
+          margin-bottom: ${convertToRem991MR(i)};
+
+      };
+      .mr-${i}{
+          margin-right: ${convertToRem991MR(i)};
+
+      };
+      .ml-${i}{
+          margin-left: ${convertToRem991MR(i)};
+
+      };
+        `;
+  }
+
+  return css`
+    ${styles}
+  `;
+}
+
 
 function createLineHeights() {
   let styles = ``;
@@ -169,4 +248,7 @@ export const GlobalStylesWrapper = styled.div`
   ${createColor()}
   ${createTextTransform()}
   ${createLineHeights()}
+  @media screen and (max-width:991px){
+    ${createMediaStyles991()}
+  }
 `;
