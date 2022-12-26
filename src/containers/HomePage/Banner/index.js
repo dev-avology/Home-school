@@ -15,7 +15,60 @@ import Image from "../../../assets/imagee.png";
 import { East } from "@mui/icons-material";
 
 export const Banner = () => {
-  const [count, setCount] = useState(0);
+  const [count1, setCount1] = useState(0);
+  const [count2, setCount2] = useState(0);
+  const [count3, setCount3] = useState(0);
+  const [count4, setCount4] = useState(0);
+  const [count5, setCount5] = useState(0);
+  const [count6, setCount6] = useState(0);
+  function Toggle1 (event) {
+    if(event.target.checked){
+      setCount1(count1 + 1);
+    }else{
+      setCount1(count1 - 1);
+    }
+  }
+
+  function Toggle2 (event) {
+    if(event.target.checked){
+      setCount2(count2 + 1);
+    }else{
+      setCount2(count2 - 1);
+    }
+  }
+
+  function Toggle3 (event) {
+    if(event.target.checked){
+      setCount3(count3 + 1);
+    }else{
+      setCount3(count3 - 1);
+    }
+  }
+
+  function Toggle4 (event) {
+    if(event.target.checked){
+      setCount4(count4 + 1);
+    }else{
+      setCount4(count4 - 1);
+    }
+  }
+
+  function Toggle5 (event) {
+    if(event.target.checked){
+      setCount5(count5 + 1);
+    }else{
+      setCount5(count5 - 1);
+    }
+  }
+
+  function Toggle6 (event) {
+    if(event.target.checked){
+      setCount6(count6 + 1);
+    }else{
+      setCount6(count6 - 1);
+    }
+  }
+
   return (
     <BannerWrapper className="banner">
       <Overlay
@@ -48,7 +101,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count1}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -58,9 +111,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onClick={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle1}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -70,7 +121,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count2}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -80,9 +131,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onChange={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle2}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -92,7 +141,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count3}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -102,9 +151,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onClick={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle3}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -121,7 +168,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count4}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -131,9 +178,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onClick={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle4}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -143,7 +188,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count5}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -153,9 +198,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onClick={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle5}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -165,7 +208,7 @@ export const Banner = () => {
                       className="fs-18 lh-22 fw-600"
                       textAlign="center"
                     >
-                      {count}
+                      {count6}
                     </Paragraph>
                     <Paragraph
                       className="fs-14 lh-17 fw-600 pv-30"
@@ -175,9 +218,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild
-                          onClick={() => setCount(count + 1)}
-                        />
+                        <ExampleTrackChild Toggle={Toggle6}/>
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
