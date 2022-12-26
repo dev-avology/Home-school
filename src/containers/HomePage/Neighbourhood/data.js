@@ -15,6 +15,11 @@ export const Data= [
         address: "Eagle Mountain, UT",
         number:"3"
     },
+    {
+        year:"2027",
+        address: "Lehi, UT",
+        number:"4"
+    },
 ];
 
 export default Data;

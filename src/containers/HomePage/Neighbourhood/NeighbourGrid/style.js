@@ -31,8 +31,8 @@ export const NeighbourGridWrapper = styled.section`
   }
   .number {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 10px;
+    right: -18px;
     font-size: 220px;
     z-index: 1;
   }

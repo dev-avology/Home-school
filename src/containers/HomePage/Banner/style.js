@@ -7,7 +7,7 @@ export const BannerWrapper = styled.section`
     background:url(${BG});
     background-size:cover;
     width:100%;
-    height:800px;
+    height:auto;
     .overlay {
         height: 100%;
         padding: 60px 0 0 0;
@@ -15,6 +15,10 @@ export const BannerWrapper = styled.section`
     .banner_inner{
         text-align:center;
         padding-top:180px;
+    }
+    .toggle_inner{
+        display:flex;
+        text-align:center;
     }
   }
 `;
