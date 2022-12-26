@@ -18,7 +18,7 @@ export const Neighbour = () => {
         <Row>
           {Data?.map((item, index) => {
             return (
-              <Col className={item.class} key={index} lg={4} md={6} sm={12}>
+              <Col className={item.class} key={index} lg={3} md={6} sm={12}>
                 <NeighbourCol data={item} />
               </Col>
             );
@@ -53,28 +53,28 @@ export const Neighbour = () => {
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="COMPANY NAME"
+                  placeholder="COMPANY NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="CONTACT NAME"
+                  placeholder="CONTACT NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={12}>
                 <TextField
                   id="outlined-basic"
-                  label="EMAIL ADDRESS"
+                  placeholder="EMAIL ADDRESS"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={12}>
                 <TextField
                   id="outlined-basic"
-                  label="CONTACT NUMBER (OPTIONAL)"
+                  placeholder="CONTACT NUMBER (OPTIONAL)"
                   variant="outlined"
                 />
                 </Col>
@@ -94,28 +94,28 @@ export const Neighbour = () => {
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="COMPANY NAME"
+                  placeholder="COMPANY NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="CONTACT NAME"
+                  placeholder="CONTACT NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={12}>
                 <TextField
                   id="outlined-basic"
-                  label="EMAIL ADDRESS"
+                  placeholder="EMAIL ADDRESS"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={12}>
                 <TextField
                   id="outlined-basic"
-                  label="CONTACT NUMBER (OPTIONAL)"
+                  placeholder="CONTACT NUMBER (OPTIONAL)"
                   variant="outlined"
                 />
                 </Col>
@@ -192,21 +192,21 @@ export const Neighbour = () => {
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="COMPANY NAME"
+                  placeholder="COMPANY NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  label="CONTACT NAME"
+                  placeholder="CONTACT NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={12}>
                 <TextField
                   id="outlined-basic"
-                  label="EMAIL ADDRESS"
+                  placeholder="EMAIL ADDRESS"
                   variant="outlined"
                 />
                 </Col>

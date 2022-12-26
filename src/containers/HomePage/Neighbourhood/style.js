@@ -43,7 +43,7 @@ export const NeighbourWrapper = styled.section`
             }
     } 
   }
-  .form_sec label {
+  .form_sec input::placeholder{
     font-family: "Times New Roman";
     font-weight: 400;
     font-size: 12px;
