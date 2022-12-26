@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/Home-school/static/css/main.c90a64ac.css",
+    "main.js": "/Home-school/static/js/main.5b6530b1.js",
+    "static/js/787.c1112931.chunk.js": "/Home-school/static/js/787.c1112931.chunk.js",
+    "static/media/postimg.png": "/Home-school/static/media/postimg.87831fa80834df46c1dc.png",
+    "static/media/banner-img.png": "/Home-school/static/media/banner-img.deb43eae691efbd19835.png",
+    "static/media/clubhouse_img.png": "/Home-school/static/media/clubhouse_img.815f0b6d0c615e4853c1.png",
+    "static/media/img-2.png": "/Home-school/static/media/img-2.53a37796a370b376261d.png",
+    "static/media/imagee.png": "/Home-school/static/media/imagee.f90d396046e529d514e2.png",
+    "static/media/img-3.png": "/Home-school/static/media/img-3.1cd64428c4f3ff668bfd.png",
+    "static/media/img-1.png": "/Home-school/static/media/img-1.7409c46e0a937104e689.png",
+    "static/media/sample.png": "/Home-school/static/media/sample.1c50aa6caaf8ec50ebe6.png",
+    "static/media/feature1.png": "/Home-school/static/media/feature1.f1aab4830dea358247e8.png",
+    "static/media/feature3.png": "/Home-school/static/media/feature3.9470ada3a61f624225ad.png",
+    "static/media/feature2.png": "/Home-school/static/media/feature2.463fc61add8c8fb01f12.png",
+    "static/media/location.png": "/Home-school/static/media/location.70f2166bf2e6b1a7fd2b.png",
+    "static/media/info1.png": "/Home-school/static/media/info1.d00f17fed7e29d078784.png",
+    "static/media/info3.png": "/Home-school/static/media/info3.1afcac47664f41f5c006.png",
+    "static/media/info4.png": "/Home-school/static/media/info4.d9a1242f090c2a43cbfb.png",
+    "index.html": "/Home-school/index.html",
+    "main.c90a64ac.css.map": "/Home-school/static/css/main.c90a64ac.css.map",
+    "main.5b6530b1.js.map": "/Home-school/static/js/main.5b6530b1.js.map",
+    "787.c1112931.chunk.js.map": "/Home-school/static/js/787.c1112931.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c90a64ac.css",
+    "static/js/main.5b6530b1.js"
+  ]
+}
