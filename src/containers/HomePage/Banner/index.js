@@ -127,7 +127,7 @@ export const Banner = () => {
                       fontSize="18"
                       lineHeight="22px"
                     >
-                      {count1}
+                      {count2}
                     </Paragraph>
                     <Paragraph
                       className=" fw-600 pv-30"
@@ -151,7 +151,7 @@ export const Banner = () => {
                       fontSize="18"
                       lineHeight="22px"
                     >
-                      {count1}
+                      {count3}
                     </Paragraph>
                     <Paragraph
                       className=" fw-600 pv-30"
@@ -182,7 +182,7 @@ export const Banner = () => {
                       fontSize="18"
                       lineHeight="22px"
                     >
-                      {count1}
+                      {count4}
                     </Paragraph>
                     <Paragraph
                       className=" fw-600 pv-30"
@@ -206,7 +206,7 @@ export const Banner = () => {
                       fontSize="18"
                       lineHeight="22px"
                     >
-                      {count1}
+                      {count5}
                     </Paragraph>
                     <Paragraph
                       className=" fw-600 pv-30"
@@ -230,7 +230,7 @@ export const Banner = () => {
                       fontSize="18"
                       lineHeight="22px"
                     >
-                      {count1}
+                      {count6}
                     </Paragraph>
                     <Paragraph
                       className=" fw-600 pv-30"
