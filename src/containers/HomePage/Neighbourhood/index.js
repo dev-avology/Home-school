@@ -26,7 +26,7 @@ export const Neighbour = () => {
         </Row>
         <Paragraph className="fs-16 lh-19 mt-40" color="#101729">
           *Phase 1 is subject to change to a homeschool community in Washington
-          country.
+          county.
         </Paragraph>
         <Row className="neighbour_txt" justify="between">
           <Col lg={6} md={12}>
@@ -142,9 +142,7 @@ export const Neighbour = () => {
                 I am passionate about teaching and welcome income opportunity.{" "}
               </li>
               <li>
-                I am a skilled or certified teacher, and am interested in
-                presenting parent workshops in the auditorium and welcome income
-                opportunity.
+              I am a skilled parent or teacher, and am interested in presenting parent workshops in the auditorium and welcome income opportunity.
               </li>
               <li>
                 I am interested in creating sports league opportunities and/or
@@ -181,7 +179,7 @@ export const Neighbour = () => {
                 <FormControlLabel className="checkbox" control={<Checkbox />} label="I would like to live in a homeschool community." />
                 </Col>
               <Col lg={12}>
-                <FormControlLabel className="checkbox" control={<Checkbox />} label="I am a certified teacher or skilled parent and am interested in serving a homeschool community." />
+                <FormControlLabel className="checkbox" control={<Checkbox />} label="I am a teacher or skilled parent and am interested in serving a homeschool community." />
                 </Col>
                 <Col lg={12}>
                 <FormControlLabel className="checkbox" control={<Checkbox />} label="I wish we had something like this in our existing community." />
@@ -192,14 +190,14 @@ export const Neighbour = () => {
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  placeholder="COMPANY NAME"
+                  placeholder="FIRST NAME"
                   variant="outlined"
                 />
                 </Col>
                 <Col lg={6}>
                 <TextField
                   id="outlined-basic"
-                  placeholder="CONTACT NAME"
+                  placeholder="LAST NAME"
                   variant="outlined"
                 />
                 </Col>

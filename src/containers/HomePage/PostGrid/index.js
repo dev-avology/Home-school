@@ -10,7 +10,6 @@ export const PostGrid = () => {
     <PostGridWrapper className="post_grid">
       <Container>
         <div className="post_grid_inner">
-          <h2>Westlake homeschool</h2>
         </div>
         <Row>
           {Data?.map((item, index) => {
