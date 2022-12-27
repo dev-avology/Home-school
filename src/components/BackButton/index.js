@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-grid-system";
 import { BackButtonWrapper } from "./style";
 
