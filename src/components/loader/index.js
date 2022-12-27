@@ -32,7 +32,7 @@ const WrapperLoader = styled.div`
   .logo {
     text-align: center;
     animation-name: ${zoomin};
-    animation-duration: 3s;
+    animation-duration: 2.5s;
     animation-iteration-count: linear;
   }
 `;

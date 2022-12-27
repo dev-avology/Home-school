@@ -176,7 +176,7 @@ function createPadding() {
 
         };`;
   }
-  for (let i = 0; i <= 35; i++) {
+  for (let i = 0; i <= 50; i++) {
     styles =
       styles +
       `.pt-${i}{

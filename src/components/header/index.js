@@ -11,7 +11,7 @@ export const Header = () => {
         <Row>
           <Col lg={3} md={6} sm={12}>
             <div className="logo">
-              <img src={Logo} alt="logo" />
+              <a href="/"><img src={Logo} alt="logo" /></a>
             </div>
           </Col>
         </Row>
