@@ -13,7 +13,7 @@ export const Footer = () => {
         <Row align="end">
           <Col lg={4} md={4} sm={12}>
             <div className="logo footer-logo">
-              <Img width='100px' className="mb-20" src={Logo} alt="logo" />
+              <Img width='100' className="mb-20" src={Logo} alt="logo" />
               <Paragraph className="fs-16 graycolor fw-500">Building Homeschool Communities</Paragraph>
             </div>
           </Col>
