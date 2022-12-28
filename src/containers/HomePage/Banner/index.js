@@ -13,64 +13,82 @@ import { StyledEngineProvider, CssVarsProvider } from "@mui/joy/styles";
 import Image from "../../../assets/imagee.png";
 
 import { East } from "@mui/icons-material";
+import { useCookies } from 'react-cookie';
+
 
 export const Banner = () => {
-  const [count1, setCount1] = useState(0);
-  const [count2, setCount2] = useState(0);
-  const [count3, setCount3] = useState(0);
-  const [count4, setCount4] = useState(0);
-  const [count5, setCount5] = useState(0);
-  const [count6, setCount6] = useState(0);
+  const [cookies, setCookie] = useCookies(['user']);
+  const [count1, setCount1] = useState(parseInt(cookies.count1) ? parseInt(cookies.count1) : 0);
+  const [count2, setCount2] = useState(parseInt(cookies.count2) ? parseInt(cookies.count2) : 0);
+  const [count3, setCount3] = useState(parseInt(cookies.count3) ? parseInt(cookies.count3) : 0);
+  const [count4, setCount4] = useState(parseInt(cookies.count4) ? parseInt(cookies.count4) : 0);
+  const [count5, setCount5] = useState(parseInt(cookies.count5) ? parseInt(cookies.count5) : 0);
+  const [count6, setCount6] = useState(parseInt(cookies.count6) ? parseInt(cookies.count6) : 0);
+
   function Toggle1(event) {
     if (event.target.checked) {
-      setCount1(count1 + 1);
+      setCount1( count1 + 1);
+      setCookie('count1', count1 + 1 , { path: '/' });
     } else {
       setCount1(count1 - 1);
+      setCookie('count1', count1 - 1, { path: '/' });
     }
   }
 
   function Toggle2(event) {
     if (event.target.checked) {
       setCount2(count2 + 1);
+      setCookie('count2', count2 + 1 , { path: '/' });
     } else {
       setCount2(count2 - 1);
+      setCookie('count2', count2 - 1 , { path: '/' });
     }
   }
 
   function Toggle3(event) {
     if (event.target.checked) {
       setCount3(count3 + 1);
+      setCookie('count3', count3 + 1 , { path: '/' });
     } else {
       setCount3(count3 - 1);
+      setCookie('count3', count3 - 1 , { path: '/' });
     }
   }
 
   function Toggle4(event) {
     if (event.target.checked) {
       setCount4(count4 + 1);
+      setCookie('count4', count4 + 1 , { path: '/' });
     } else {
       setCount4(count4 - 1);
+      setCookie('count4', count4 - 1 , { path: '/' });
     }
   }
 
   function Toggle5(event) {
     if (event.target.checked) {
       setCount5(count5 + 1);
+      setCookie('count5', count5 + 1 , { path: '/' });
     } else {
       setCount5(count5 - 1);
+      setCookie('count5', count5 - 1 , { path: '/' });
     }
   }
 
   function Toggle6(event) {
     if (event.target.checked) {
       setCount6(count6 + 1);
+      setCookie('count6', count6 + 1 , { path: '/' });
     } else {
       setCount6(count6 - 1);
+      setCookie('count6', count6 - 1 , { path: '/' });
     }
   }
-
+  
   return (
+      
     <BannerWrapper className="banner">
+      {cookies.count}
       <Overlay
         color="linear-gradient(1.15deg, rgba(0, 0, 0, 0.5) 61.89%, rgba(0, 0, 0, 0) 98.7%);"
         className="overlay"
@@ -115,7 +133,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle1} />
+                        <ExampleTrackChild Cookies={cookies?.count1} Toggle={Toggle1} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -139,7 +157,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle2} />
+                        <ExampleTrackChild Cookies={cookies?.count2} Toggle={Toggle2} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -163,7 +181,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle3} />
+                        <ExampleTrackChild Cookies={cookies?.count3} Toggle={Toggle3} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -194,7 +212,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle4} />
+                        <ExampleTrackChild Cookies={cookies?.count4} Toggle={Toggle4} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -218,7 +236,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle5} />
+                        <ExampleTrackChild Cookies={cookies?.count5} Toggle={Toggle5} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
@@ -242,7 +260,7 @@ export const Banner = () => {
                     </Paragraph>
                     <StyledEngineProvider injectFirst>
                       <CssVarsProvider>
-                        <ExampleTrackChild Toggle={Toggle6} />
+                        <ExampleTrackChild Cookies={cookies?.count6} Toggle={Toggle6} />
                       </CssVarsProvider>
                     </StyledEngineProvider>
                   </div>
